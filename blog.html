@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Santa Babara, CA - The American Riviera</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Santa Barbara, CA is called the American Riviera becuase of it's climate and geographic layout.">
+    <meta name="keywords" content="Santa Barbara American Riviera">
+    <meta name="author" content="Dave Pattison"
+</head>
+
+<body>
+    <h1>My Registration Form</h1>
+    <!-- The browser will automatically choose the format it supports. -->
+    <audio controls="true">
+        <source src="audio/sample.mp3" type="audio/mp3">
+        <source src="audio/sample.ogg" type="audio/ogg">
+        <source src="audio/sample.aac" type="audio/mp4">
+        <!-- If no support at all. -->
+        HTML5 audio not supported
+    </audio>
+
+    <video width="400" height="200" poster="picture.jpg" controls>
+        <source src="small.ogv">
+    </video>
+
+
+    <form action="process.php" method="post">
+
+        <p><label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name"></p>
+
+        <p><label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name"></p>
+
+        <p><label for="email">Email:</label>
+            <input type="text" id="email" name="email"></p>
+
+        <p><label for="password">Password:</label>
+            <input type="password" id="password" name="password"></p>
+
+        <label for="pw_confirm">PW Confirm:</label>
+        <input type="password" id="pw_confirm" name="password_confirmation"><br>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+
+        <p>A short description about yourself:</p>
+        <textarea name="description"></textarea><br> Favorite Language
+        <select name="language">
+            <option value="php">php</option>
+            <option value="c#">c#</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
